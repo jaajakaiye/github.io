@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Project 2
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GPA vs. SAT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong></strong>Jumoke Ajakaiye</a>
+									<ul class="icons">
+										<li><a href="http://www.linkedin.com/in/jajakaiye" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/jaajakaiye" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://twitter.com/jaajakaiye" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Project 2</h1>
+									</header>
+									<p><font size="3.5"> The basis for this project is, <strong>"would a student's SAT score determines their graduating GPA in College."</strong> The data 
+									analysis in this project would explain this outcome. I used the Linear Regression analysis because it's a linear approximation of a casual relationship between two
+									or more variables. Linear Regression is probably the most fundamental machine learning method out there and starting point for the advanced analytical
+									learning path. This method would predict GPA based on the SAT scores obtained from student's standardized testing.</font></p>
+									<p><font size="3.5"> SAT is known as "standardized testing" students sit for as Seniors in High School to apply to Universities in the United States. It measures 
+									the student's ability in Mathematics, Critical Reading, and Writing. The higher the score, the higher the chance the student would be admitted to their top
+									choice University. The SAT is based on <strong> a 1600*-point scale</strong>; there is no penalty for wrong answers, so the raw score is the sum of the number 
+									of questions you answer correctly.</font></p> 
+									
+									<p><font size="3.5"> *In March 2016, the SAT underwent a massive redesign, part of which included a change to its scoring system: it shifted from a 2400-point 
+									scale to a 1600-point scale.</font></p>
+									
+									
+									<p><font size="3.5">GPA is known as "grade point average," which indicates how well or high students scored in their courses on average. Usually, the GPA 
+									scale is between <strong> "1.0 to 4.0"</strong> and shows the level of success during their four years in college.</font></p>
+									
+									<p><font size="3.5">The process applying to Universities begins with the following:
+									<li>Sit for SAT</li>
+									<li>Get SAT score</li>
+									<li>Apply to University</li>
+									<li>Attend University</li>
+									<li>Graduate with GPA</li></font></p>
+									
+									<p><font size="3.5">As I stated before,"would a student's SAT score determines their graduating GPA in College;" why would I predict GPA with SAT? The reason is SAT
+									is considered one of the best estimators of intellectual capacity and capability. Almost all colleges across the USA are using the SAT as a proxy for admission.
+									The SAT has stood the test of time since it was debut in 1926 and administered by the College Board.</font></p>
+
+                                    <hr class="major" />
+                                    
+                                    <span class"image main"><center><img src="images/gpasatt.png" style="width:700px;height:400px;" </center></span></a>    
+									
+									<p><font size="3.5"><strong>The table shows the top 15 SAT scores and the GPA.</strong></font></p>
+									 
+				   				    <span class"image main"><center><img src="images/gpasat.png" style="width:700px;height:400px;" </center></span></a>
+						    
+									<p><font size="3.5"><strong>This picture shows the Python code in the Jupyter Notebook of the data analysis from the 
+									sample size.</strong></font></p>
+									
+									<hr class="major" />
+									
+									<span class="image main"><center><img src="images/simplelinearreg.png" style="width:900px;height:600px;" </center></span></a> 
+    							
+									<p><font size="3.5"><strong>The graph is a Linear Regression that shows the correlation between GPA and SAT. For a student to score high 
+									on the SAT, the results explain a higher GPA. In predicting the SAT scores, the Linear Regression equation is ŷ = b0 +b1x1 would calculate 
+									the GPA scores.</strong></font></p>
+									
+									<span class"image main"><center><img src="images/scattergs.png" style="width:700px;height:400px;" </center></span></a>
+									
+									<p><font size="3.5"><strong>This scatter plot was executed using Python code in the Jupyter Notebook and is similar to the picture above. 
+									</strong></font></p>                                
+								
+								    <hr class="major"/>
+								    
+								    <span class"image main"><center><img src="images/olsgs.png" style="width:700px;height:500px;" </center></span></a>
+								    
+								    <p><font size="3.5"><strong>The OLS results illustrate the coefficient of SAT and constant to graph the regression line. The Linear Regression 
+								    graph and scatter plot above use this summary to analyze the correlation.</strong></font></p>
+									
+									<hr class="major" />
+
+									<h2>Results</h2>
+                                     
+                                    <p><font size="3.5">Since the coeifficient for the SAT is 0.0017, and the constant is 0.2750. The Linear Regression equation provides the answer to predict 
+                                    a student's score from the SAT to GPA results. For these assumption to be accurate, let's denote SAT scores with the equation and analyze 
+                                    if the outcome is similar to the top 15 scores from the picture above.</font></p> 
+                                    
+                                    <p><font size="3.5">The equation from the OLS summary is ŷ= 0.0017*x1 + 0.275. If students received between 1650, 1969, & 2008 scores on their SAT, the GPA 
+                                    score would predict 3.08, 3.11, & 3.69.</font></p>
+                                    <p><font size="3.5">From the top 15 scores, a student scoreed 2050 on the SAT and has a GPA of 3.81. If we predict 2008 as an SAT score, then the GPA score is
+                                    3.69. The hypothesis is accurate about the higher the SAT score, the higher the GPA. Predicting a 1650 SAT score, the GPA would be lower than a 
+                                    higher SAT score.</font></p>
+                                    
+                                    
+                                    <p><font size="3.5">For more information and resources, see the Manhattan Review online 
+										<a href="https://www.manhattanreview.com/sat-predictor-college-success/" target="_blank">Click here.</a></font></p>
+                                                                         
+								</section>
+				
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+    									<li><a href="generic.html">About Me</a></li>
+										<li><a href="elements.html">Hobbies</a></li>
+										
+										<li>	
+								</nav>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>My contact information is below; feel free to reach out!</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">jaajakaiye@gmail.com</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">by Jumoke Ajakaiye. All rights reserved. Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
